@@ -1,18 +1,18 @@
 const mongoose = require('mongoose');
 const db =  require('./models');
 
-// MongoDB Connection String
-const DB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/wayfarer';
+// // MongoDB Connection String
+// const DB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/wayfarer';
 
-// Connect MongoDB
-mongoose.connect(DB_URI, {
-  useNewUrlParser: true,
-  useFindAndModify: false,
-  useCreateIndex: true,
-  useUnifiedTopology: true,
-})
-  .then(() => console.log('MongoDB connected successfully'))
-  .catch((err) => console.log(`MongoDB error: ${err}`));
+// // Connect MongoDB
+// mongoose.connect(DB_URI, {
+//   useNewUrlParser: true,
+//   useFindAndModify: false,
+//   useCreateIndex: true,
+//   useUnifiedTopology: true,
+// })
+//   .then(() => console.log('MongoDB connected successfully'))
+//   .catch((err) => console.log(`MongoDB error: ${err}`));
 
   const cities = [
     {
