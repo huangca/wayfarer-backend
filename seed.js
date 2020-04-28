@@ -53,15 +53,15 @@ db.City.deleteMany({}, (err, result) => {
   
 
   // Create New Cities
-  console.log('Creating new cities...');
+  // console.log('Creating new cities...');
 
-  db.City.create(cities, (err, newCities) => {
-    if (err) {
-      console.log(err);
-      process.exit();
-    }
+  // db.City.create(cities, (err, newCities) => {
+  //   if (err) {
+  //     console.log(err);
+  //     process.exit();
+  //   }
 
-    console.log(`Successfully created ${newCities.length} cities.`);
-    process.exit();
-  });
+  //   console.log(`Successfully created ${newCities.length} cities.`);
+  //   process.exit();
+  // });
 });
