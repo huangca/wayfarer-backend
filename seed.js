@@ -52,7 +52,7 @@ db.City.deleteMany({}, (err, result) => {
 
   
 
-  Create New Cities
+  //Create New Cities
   console.log('Creating new cities...');
 
   db.City.create(cities, (err, newCities) => {
