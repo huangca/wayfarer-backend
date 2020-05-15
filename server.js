@@ -31,7 +31,7 @@ app.use(bodyParser.json())
 app.use(session({
     // Store the session in our DB
     store: new MongoStore({ url: process.env.MONGODB_URI }),
-    store: new MongoStore({ url: 'mongodb://localhost:27017/wayfarer' }),
+   // store: new MongoStore({ url: 'mongodb://localhost:27017/wayfarer' }),
     secret: "verysecret",
     resave: false,
     saveUninitialized: false, // Only create a session if a property has been added to the session
