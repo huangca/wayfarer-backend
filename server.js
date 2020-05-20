@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 3001;
 
 
 const corsOptions = {
-    origin : [`http://localhost:3000`,`https://wayfarer-cities-review.herokuapp.com/`],
+    origin : [`http://localhost:3000`,`https://wayfarer-cities-review.herokuapp.com`],
     credentials : true,
     optionSuccessStatus : 200
 }
